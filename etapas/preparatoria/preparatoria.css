@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #2c3e50; /* Fondo gris oscuro */
+    color: #ecf0f1; /* Texto claro */
+    background-size: contain; /* Ajusta el tamaño del logo */
+    background-repeat: no-repeat; /* No repite el logo */
+    background-position: center; /* Centra el logo */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(52, 73, 94, 0.8); /* Fondo gris medio con opacidad */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #f1c40f; /* Amarillo oscuro */
+    font-size: 2em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.anecdote-section, .activities-section {
+    background-color: rgba(44, 62, 80, 0.8); /* Fondo gris oscuro con opacidad */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.anecdote-section h2, .activities-section h2 {
+    color: #f1c40f; /* Amarillo oscuro */
+    margin-top: 0;
+}
+
+.activities-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.activities-section ul li {
+    background-color: #f39c12; /* Naranja oscuro */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    color: #ecf0f1; /* Color del texto claro */
+}

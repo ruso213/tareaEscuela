@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #2b2b2b; /* Fondo gris oscuro */
+    color: #ecf0f1; /* Texto claro */
+    background-size: contain; /* Ajusta el tamaño del logo */
+    background-repeat: no-repeat; /* No repite el logo */
+    background-position: center; /* Centra el logo */
+}
+
+header {
+    background-color: #333; /* Fondo del header */
+    padding: 10px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ff5722; /* Naranja vibrante */
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff; /* Color blanco al pasar el ratón */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(33, 33, 33, 0.8); /* Fondo gris oscuro con opacidad */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.container header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container header h1 {
+    color: #ff5722; /* Naranja vibrante */
+    font-size: 2em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.anecdote-section, .activities-section {
+    background-color: rgba(48, 48, 48, 0.8); /* Fondo gris oscuro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.anecdote-section h2, .activities-section h2 {
+    color: #ff5722; /* Naranja vibrante */
+    margin-top: 0;
+}
+
+.activities-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.activities-section ul li {
+    background-color: #607d8b; /* Azul grisáceo */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    color: #ecf0f1; /* Color del texto claro */
+}
