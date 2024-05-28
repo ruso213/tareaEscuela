@@ -57,7 +57,7 @@ body {
 }
 
 .accordion input:checked ~ .submenu {
-    max-height: 200px;
+    max-height: 400px;
 }
 
 .accordion input:checked + label .arrow {
