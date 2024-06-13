@@ -1,61 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Side Navbar Accordion</title>
-    <link rel="stylesheet" href="menu-proyect.css">
+    <meta name="viewport" content-frame="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: #4A90E2;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content-frame: center;
+        }
+        nav li {
+            position: relative;
+            margin: 0 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            display: block;
+            border-radius: 5px;
+        }
+        nav li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #4A90E2;
+            padding: 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        nav li:hover ul {
+            display: block;
+        }
+        nav li ul li {
+            width: 200px;
+        }
+        nav li ul li a {
+            padding: 10px;
+            border-radius: 0;
+        }
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <div class="sidebar">
-        <ul class="accordion">
-            <li>
-                <input type="checkbox" id="home">
-                <label for="home">
-                    Inicio
-                    <span class="arrow">&#9662;</span>
-                </label>
-                <ul class="submenu">
-                    <li><a target="content-frame" href="">Animacion 1</a></li>
-                </ul>
-            </li>
-            <li>
-                <input type="checkbox" id="services">
-                <label for="services">
-                    Autobiografia
-                    <span class="arrow">&#9662;</span>
-                </label>
-                <ul class="submenu">
-                    <li><a target="content-frame" href="/etapas/bebe/bebe.html">Bebe</a></li>
-                    <li><a target="content-frame" href="etapas/kinder/kinder.html">Kinder</a></li>
-                    <li><a target="content-frame" href="etapas/primaria/priamria.html">Primaria</a></li>
-                    <li><a target="content-frame" href="etapas/secundaria/secundaria.html">Secundaria</a></li>
-                    <li><a target="content-frame" href="etapas/preparatoria/preparatoria.html">Prepa</a></li>
-                    <li><a target="content-frame" href="etapas/universidad/universidad.html">Universidad</a></li>
-                </ul>
-            </li>
-            <li>
-                <input type="checkbox" id="about">
-                <label for="about">
-                    Acerca de
-                    <span class="arrow">&#9662;</span>
-                </label>
-                <ul class="submenu">
-                    <li><a target="content-frame" href="acerca-de/comentarios.html">Comentarios</a></li>
-                    <li><a target="content-frame" href="acerca-de/datos-personales.html">Datos personales</a></li>
-                </ul>
-            </li>
-            <li>
-                <input type="checkbox" id="contact">
-                <label for="contact">
-                    Menu animacion
-                    <span class="arrow">&#9662;</span>
-                </label>
-                <ul class="submenu">
-                    <li><a target="content-frame" href="inicio/inicio.html">Animacion</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+
+    <header>
+        <nav>
+            <ul>
+                <li>Inicio
+                    <ul>
+                        <li><a href="/inicio/inicio.html" target="content-frame">Animación 1</a></li>
+                    </ul>
+                </li>
+                <li>Autobiografía
+                    <ul>
+                        <li><a href="/etapas/bebe/bebe.html" target="content-frame">Bebé</a></li>
+                        <li><a href="/etapas/kinder/kinder.html" target="content-frame">Kinder</a></li>
+                        <li><a href="/etapas/primaria/priamria.html" target="content-frame">Primaria</a></li>
+                        <li><a href="/etapas/secundaria/secundaria.html" target="content-frame">Secundaria</a></li>
+                        <li><a href="/etapas/preparatoria/preparatoria.html" target="content-frame">Preparatoria</a></li>
+                    </ul>
+                </li>
+                <li>Acerca de
+                    <ul>
+                        <li><a href="/acerca-de/comentarios.html" target="content-frame">Comentarios</a></li>
+                        <li><a href="/acerca-de/datos-personales.html" target="content-frame">Datos Personales</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
 </body>
 </html>
